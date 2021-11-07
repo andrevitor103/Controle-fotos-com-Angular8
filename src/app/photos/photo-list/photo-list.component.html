@@ -1,0 +1,5 @@
+<apt-search (onTyping)="filter = $event" [value]="filter"></apt-search>
+
+<apt-photos [photos]="photos | filterByDescription: filter"></apt-photos>
+
+<apt-load-button (click)="load()" [hasMore]="hasMore"></apt-load-button>
